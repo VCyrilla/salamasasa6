@@ -23,7 +23,7 @@ The project depends on the following external libraries, frameworks, or packages
 
 Follow these steps to set up the project environment and run the code:
 
-1. **Clone the Repository**: Clone the project repository to your local machine using the command `git clone <repository_url>` in Git Bash.
+1. **Clone the Repository**: Clone the project repository to your local machine using the command `git clone <https://github.com/VCyrilla/salamasasa5>` in Git Bash.
 2. **Install Composer**: If you haven’t installed Composer, download it from the official website and follow the installation instructions.
 3. **Install Dependencies**: Navigate to the project directory in your Command Prompt and run `composer install`. This will install all the necessary dependencies for the project.
 4. **Setup CodeIgniter**: Download and install CodeIgniter into your project directory. You can do this by running `composer require codeigniter/framework`.
