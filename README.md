@@ -15,8 +15,10 @@ Strengthening Security and Operational Efficiency in Gender-Based Violence Healt
   - [Examples](#examples)
 - [Input/Output](#inputoutput)
 - [Contributing](#contributing)
+- [Project Structure](#projectstructure)
 - [License](#license)
 - [Contact](#contact)
+
 
 ## Introduction
 
@@ -118,9 +120,594 @@ Contributions are welcome! Please follow these steps to contribute:
 5. Push to the branch (`git push origin feature-branch`).
 6. Open a Pull Request.
 
+ ##  Project structure
+
+└───doctors
+    ├───app
+    │   ├───Config
+    │   │   └───Boot
+    │   ├───Controllers
+    │   │   ├───Admin
+    │   │   ├───Auth
+    │   │   ├───Doctor
+    │   │   ├───Main
+    │   │   └───Patient
+    │   ├───Database
+    │   │   ├───Migrations
+    │   │   └───Seeds
+    │   ├───Filters
+    │   ├───Helpers
+    │   ├───Language
+    │   │   └───en
+    │   ├───Libraries
+    │   ├───Models
+    │   ├───ThirdParty
+    │   └───Views
+    │       ├───admin
+    │       │   ├───appointment
+    │       │   ├───doctor
+    │       │   ├───institution
+    │       │   ├───region
+    │       │   └───specialization
+    │       ├───doctor
+    │       │   └───appointment
+    │       ├───emails
+    │       ├───errors
+    │       │   ├───cli
+    │       │   └───html
+    │       ├───main
+    │       ├───patient
+    │       │   ├───appointment
+    │       │   └───doctor
+    │       └───templates
+    ├───assets
+    │   ├───css
+    │   ├───images
+    │   └───js
+    ├───public
+    │   └───images
+    ├───tests
+    │   ├───database
+    │   ├───session
+    │   ├───unit
+    │   └───_support
+    │       ├───Database
+    │       │   ├───Migrations
+    │       │   └───Seeds
+    │       ├───Libraries
+    │       └───Models
+    ├───vendor
+    │   ├───bin
+    │   ├───codeigniter4
+    │   │   └───framework
+    │   │       ├───app
+    │   │       │   ├───Config
+    │   │       │   │   └───Boot
+    │   │       │   ├───Controllers
+    │   │       │   ├───Database
+    │   │       │   │   ├───Migrations
+    │   │       │   │   └───Seeds
+    │   │       │   ├───Filters
+    │   │       │   ├───Helpers
+    │   │       │   ├───Language
+    │   │       │   │   └───en
+    │   │       │   ├───Libraries
+    │   │       │   ├───Models
+    │   │       │   ├───ThirdParty
+    │   │       │   └───Views
+    │   │       │       └───errors
+    │   │       │           ├───cli
+    │   │       │           └───html
+    │   │       ├───public
+    │   │       ├───system
+    │   │       │   ├───API
+    │   │       │   ├───Autoloader
+    │   │       │   ├───Cache
+    │   │       │   │   ├───Exceptions
+    │   │       │   │   ├───FactoriesCache
+    │   │       │   │   └───Handlers
+    │   │       │   ├───CLI
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───Commands
+    │   │       │   │   ├───Cache
+    │   │       │   │   ├───Database
+    │   │       │   │   ├───Encryption
+    │   │       │   │   ├───Generators
+    │   │       │   │   │   └───Views
+    │   │       │   │   ├───Housekeeping
+    │   │       │   │   ├───Server
+    │   │       │   │   ├───Translation
+    │   │       │   │   └───Utilities
+    │   │       │   │       └───Routes
+    │   │       │   │           └───AutoRouterImproved
+    │   │       │   ├───Config
+    │   │       │   ├───Cookie
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───Database
+    │   │       │   │   ├───Exceptions
+    │   │       │   │   ├───MySQLi
+    │   │       │   │   ├───OCI8
+    │   │       │   │   ├───Postgre
+    │   │       │   │   ├───SQLite3
+    │   │       │   │   └───SQLSRV
+    │   │       │   ├───DataCaster
+    │   │       │   │   ├───Cast
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───DataConverter
+    │   │       │   ├───Debug
+    │   │       │   │   └───Toolbar
+    │   │       │   │       ├───Collectors
+    │   │       │   │       └───Views
+    │   │       │   ├───Email
+    │   │       │   ├───Encryption
+    │   │       │   │   ├───Exceptions
+    │   │       │   │   └───Handlers
+    │   │       │   ├───Entity
+    │   │       │   │   ├───Cast
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───Events
+    │   │       │   ├───Exceptions
+    │   │       │   ├───Files
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───Filters
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───Format
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───Helpers
+    │   │       │   │   └───Array
+    │   │       │   ├───Honeypot
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───HotReloader
+    │   │       │   ├───HTTP
+    │   │       │   │   ├───Exceptions
+    │   │       │   │   └───Files
+    │   │       │   ├───I18n
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───Images
+    │   │       │   │   ├───Exceptions
+    │   │       │   │   └───Handlers
+    │   │       │   ├───Language
+    │   │       │   │   └───en
+    │   │       │   ├───Log
+    │   │       │   │   ├───Exceptions
+    │   │       │   │   └───Handlers
+    │   │       │   ├───Modules
+    │   │       │   ├───Pager
+    │   │       │   │   ├───Exceptions
+    │   │       │   │   └───Views
+    │   │       │   ├───Publisher
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───RESTful
+    │   │       │   ├───Router
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───Security
+    │   │       │   │   └───Exceptions
+    │   │       │   ├───Session
+    │   │       │   │   ├───Exceptions
+    │   │       │   │   └───Handlers
+    │   │       │   │       └───Database
+    │   │       │   ├───Test
+    │   │       │   │   ├───Constraints
+    │   │       │   │   ├───Filters
+    │   │       │   │   ├───Interfaces
+    │   │       │   │   └───Mock
+    │   │       │   ├───ThirdParty
+    │   │       │   │   ├───Escaper
+    │   │       │   │   │   └───Exception
+    │   │       │   │   ├───Kint
+    │   │       │   │   │   ├───Parser
+    │   │       │   │   │   ├───Renderer
+    │   │       │   │   │   │   ├───Rich
+    │   │       │   │   │   │   └───Text
+    │   │       │   │   │   ├───resources
+    │   │       │   │   │   │   └───compiled
+    │   │       │   │   │   └───Zval
+    │   │       │   │   │       └───Representation
+    │   │       │   │   └───PSR
+    │   │       │   │       └───Log
+    │   │       │   ├───Throttle
+    │   │       │   ├───Traits
+    │   │       │   ├───Typography
+    │   │       │   ├───Validation
+    │   │       │   │   ├───Exceptions
+    │   │       │   │   ├───StrictRules
+    │   │       │   │   └───Views
+    │   │       │   └───View
+    │   │       │       ├───Cells
+    │   │       │       └───Exceptions
+    │   │       ├───tests
+    │   │       │   ├───database
+    │   │       │   ├───session
+    │   │       │   ├───unit
+    │   │       │   └───_support
+    │   │       │       ├───Database
+    │   │       │       │   ├───Migrations
+    │   │       │       │   └───Seeds
+    │   │       │       ├───Libraries
+    │   │       │       └───Models
+    │   │       └───writable
+    │   │           ├───cache
+    │   │           ├───logs
+    │   │           ├───session
+    │   │           └───uploads
+    │   ├───composer
+    │   ├───fakerphp
+    │   │   └───faker
+    │   │       └───src
+    │   │           └───Faker
+    │   │               ├───Calculator
+    │   │               ├───Container
+    │   │               ├───Core
+    │   │               ├───Extension
+    │   │               ├───Guesser
+    │   │               ├───ORM
+    │   │               │   ├───CakePHP
+    │   │               │   ├───Doctrine
+    │   │               │   ├───Mandango
+    │   │               │   ├───Propel
+    │   │               │   ├───Propel2
+    │   │               │   └───Spot
+    │   │               └───Provider
+    │   │                   ├───ar_EG
+    │   │                   ├───ar_JO
+    │   │                   ├───ar_SA
+    │   │                   ├───at_AT
+    │   │                   ├───bg_BG
+    │   │                   ├───bn_BD
+    │   │                   ├───cs_CZ
+    │   │                   ├───da_DK
+    │   │                   ├───de_AT
+    │   │                   ├───de_CH
+    │   │                   ├───de_DE
+    │   │                   ├───el_CY
+    │   │                   ├───el_GR
+    │   │                   ├───en_AU
+    │   │                   ├───en_CA
+    │   │                   ├───en_GB
+    │   │                   ├───en_HK
+    │   │                   ├───en_IN
+    │   │                   ├───en_NG
+    │   │                   ├───en_NZ
+    │   │                   ├───en_PH
+    │   │                   ├───en_SG
+    │   │                   ├───en_UG
+    │   │                   ├───en_US
+    │   │                   ├───en_ZA
+    │   │                   ├───es_AR
+    │   │                   ├───es_ES
+    │   │                   ├───es_PE
+    │   │                   ├───es_VE
+    │   │                   ├───et_EE
+    │   │                   ├───fa_IR
+    │   │                   ├───fi_FI
+    │   │                   ├───fr_BE
+    │   │                   ├───fr_CA
+    │   │                   ├───fr_CH
+    │   │                   ├───fr_FR
+    │   │                   ├───he_IL
+    │   │                   ├───hr_HR
+    │   │                   ├───hu_HU
+    │   │                   ├───hy_AM
+    │   │                   ├───id_ID
+    │   │                   ├───is_IS
+    │   │                   ├───it_CH
+    │   │                   ├───it_IT
+    │   │                   ├───ja_JP
+    │   │                   ├───ka_GE
+    │   │                   ├───kk_KZ
+    │   │                   ├───ko_KR
+    │   │                   ├───lt_LT
+    │   │                   ├───lv_LV
+    │   │                   ├───me_ME
+    │   │                   ├───mn_MN
+    │   │                   ├───ms_MY
+    │   │                   ├───nb_NO
+    │   │                   ├───ne_NP
+    │   │                   ├───nl_BE
+    │   │                   ├───nl_NL
+    │   │                   ├───pl_PL
+    │   │                   ├───pt_BR
+    │   │                   ├───pt_PT
+    │   │                   ├───ro_MD
+    │   │                   ├───ro_RO
+    │   │                   ├───ru_RU
+    │   │                   ├───sk_SK
+    │   │                   ├───sl_SI
+    │   │                   ├───sr_Cyrl_RS
+    │   │                   ├───sr_Latn_RS
+    │   │                   ├───sr_RS
+    │   │                   ├───sv_SE
+    │   │                   ├───th_TH
+    │   │                   ├───tr_TR
+    │   │                   ├───uk_UA
+    │   │                   ├───vi_VN
+    │   │                   ├───zh_CN
+    │   │                   └───zh_TW
+    │   ├───laminas
+    │   │   └───laminas-escaper
+    │   │       └───src
+    │   │           └───Exception
+    │   ├───mikey179
+    │   │   └───vfsstream
+    │   │       └───src
+    │   │           ├───main
+    │   │           │   └───php
+    │   │           │       └───org
+    │   │           │           └───bovigo
+    │   │           │               └───vfs
+    │   │           │                   ├───content
+    │   │           │                   └───visitor
+    │   │           └───test
+    │   │               ├───patches
+    │   │               ├───php
+    │   │               │   └───org
+    │   │               │       └───bovigo
+    │   │               │           └───vfs
+    │   │               │               ├───content
+    │   │               │               ├───proxy
+    │   │               │               └───visitor
+    │   │               ├───phpt
+    │   │               └───resources
+    │   │                   └───filesystemcopy
+    │   │                       ├───emptyFolder
+    │   │                       └───withSubfolders
+    │   │                           ├───subfolder1
+    │   │                           └───subfolder2
+    │   ├───myclabs
+    │   │   └───deep-copy
+    │   │       └───src
+    │   │           └───DeepCopy
+    │   │               ├───Exception
+    │   │               ├───Filter
+    │   │               │   └───Doctrine
+    │   │               ├───Matcher
+    │   │               │   └───Doctrine
+    │   │               ├───Reflection
+    │   │               ├───TypeFilter
+    │   │               │   ├───Date
+    │   │               │   └───Spl
+    │   │               └───TypeMatcher
+    │   ├───nikic
+    │   │   └───php-parser
+    │   │       ├───bin
+    │   │       └───lib
+    │   │           └───PhpParser
+    │   │               ├───Builder
+    │   │               ├───Comment
+    │   │               ├───ErrorHandler
+    │   │               ├───Internal
+    │   │               ├───Lexer
+    │   │               │   └───TokenEmulator
+    │   │               ├───Node
+    │   │               │   ├───Expr
+    │   │               │   │   ├───AssignOp
+    │   │               │   │   ├───BinaryOp
+    │   │               │   │   └───Cast
+    │   │               │   ├───Name
+    │   │               │   ├───Scalar
+    │   │               │   │   └───MagicConst
+    │   │               │   └───Stmt
+    │   │               │       └───TraitUseAdaptation
+    │   │               ├───NodeVisitor
+    │   │               ├───Parser
+    │   │               └───PrettyPrinter
+    │   ├───phar-io
+    │   │   ├───manifest
+    │   │   │   ├───src
+    │   │   │   │   ├───exceptions
+    │   │   │   │   ├───values
+    │   │   │   │   └───xml
+    │   │   │   └───tools
+    │   │   │       └───php-cs-fixer.d
+    │   │   └───version
+    │   │       └───src
+    │   │           ├───constraints
+    │   │           └───exceptions
+    │   ├───phpunit
+    │   │   ├───php-code-coverage
+    │   │   │   └───src
+    │   │   │       ├───Data
+    │   │   │       ├───Driver
+    │   │   │       ├───Exception
+    │   │   │       ├───Node
+    │   │   │       ├───Report
+    │   │   │       │   ├───Html
+    │   │   │       │   │   └───Renderer
+    │   │   │       │   │       └───Template
+    │   │   │       │   │           ├───css
+    │   │   │       │   │           ├───icons
+    │   │   │       │   │           └───js
+    │   │   │       │   └───Xml
+    │   │   │       ├───StaticAnalysis
+    │   │   │       ├───TestSize
+    │   │   │       ├───TestStatus
+    │   │   │       └───Util
+    │   │   ├───php-file-iterator
+    │   │   │   └───src
+    │   │   ├───php-invoker
+    │   │   │   └───src
+    │   │   │       └───exceptions
+    │   │   ├───php-text-template
+    │   │   │   └───src
+    │   │   │       └───exceptions
+    │   │   ├───php-timer
+    │   │   │   └───src
+    │   │   │       └───exceptions
+    │   │   └───phpunit
+    │   │       ├───schema
+    │   │       └───src
+    │   │           ├───Event
+    │   │           │   ├───Dispatcher
+    │   │           │   ├───Emitter
+    │   │           │   ├───Events
+    │   │           │   │   ├───Application
+    │   │           │   │   ├───Test
+    │   │           │   │   │   ├───Assertion
+    │   │           │   │   │   ├───HookMethod
+    │   │           │   │   │   ├───Issue
+    │   │           │   │   │   ├───Lifecycle
+    │   │           │   │   │   ├───Outcome
+    │   │           │   │   │   └───TestDouble
+    │   │           │   │   ├───TestRunner
+    │   │           │   │   └───TestSuite
+    │   │           │   ├───Exception
+    │   │           │   └───Value
+    │   │           │       ├───Runtime
+    │   │           │       ├───Telemetry
+    │   │           │       ├───Test
+    │   │           │       │   └───TestData
+    │   │           │       └───TestSuite
+    │   │           ├───Framework
+    │   │           │   ├───Assert
+    │   │           │   ├───Attributes
+    │   │           │   ├───Constraint
+    │   │           │   │   ├───Boolean
+    │   │           │   │   ├───Cardinality
+    │   │           │   │   ├───Equality
+    │   │           │   │   ├───Exception
+    │   │           │   │   ├───Filesystem
+    │   │           │   │   ├───Math
+    │   │           │   │   ├───Object
+    │   │           │   │   ├───Operator
+    │   │           │   │   ├───String
+    │   │           │   │   ├───Traversable
+    │   │           │   │   └───Type
+    │   │           │   ├───Exception
+    │   │           │   │   ├───Incomplete
+    │   │           │   │   ├───ObjectEquals
+    │   │           │   │   └───Skipped
+    │   │           │   ├───MockObject
+    │   │           │   │   ├───Exception
+    │   │           │   │   ├───Generator
+    │   │           │   │   │   ├───Exception
+    │   │           │   │   │   └───templates
+    │   │           │   │   └───Runtime
+    │   │           │   │       ├───Api
+    │   │           │   │       ├───Builder
+    │   │           │   │       ├───Interface
+    │   │           │   │       ├───Rule
+    │   │           │   │       └───Stub
+    │   │           │   ├───TestSize
+    │   │           │   └───TestStatus
+    │   │           ├───Logging
+    │   │           │   ├───JUnit
+    │   │           │   │   └───Subscriber
+    │   │           │   ├───TeamCity
+    │   │           │   │   └───Subscriber
+    │   │           │   └───TestDox
+    │   │           │       └───TestResult
+    │   │           │           └───Subscriber
+    │   │           ├───Metadata
+    │   │           │   ├───Api
+    │   │           │   ├───Exception
+    │   │           │   ├───Parser
+    │   │           │   │   └───Annotation
+    │   │           │   └───Version
+    │   │           ├───Runner
+    │   │           │   ├───Baseline
+    │   │           │   │   ├───Exception
+    │   │           │   │   └───Subscriber
+    │   │           │   ├───Exception
+    │   │           │   ├───Extension
+    │   │           │   ├───Filter
+    │   │           │   ├───GarbageCollection
+    │   │           │   │   └───Subscriber
+    │   │           │   ├───ResultCache
+    │   │           │   │   └───Subscriber
+    │   │           │   └───TestResult
+    │   │           │       └───Subscriber
+    │   │           ├───TextUI
+    │   │           │   ├───Command
+    │   │           │   │   └───Commands
+    │   │           │   ├───Configuration
+    │   │           │   │   ├───Cli
+    │   │           │   │   ├───Exception
+    │   │           │   │   ├───Value
+    │   │           │   │   └───Xml
+    │   │           │   │       ├───CodeCoverage
+    │   │           │   │       │   └───Report
+    │   │           │   │       ├───Logging
+    │   │           │   │       │   └───TestDox
+    │   │           │   │       ├───Migration
+    │   │           │   │       │   └───Migrations
+    │   │           │   │       ├───SchemaDetector
+    │   │           │   │       └───Validator
+    │   │           │   ├───Exception
+    │   │           │   └───Output
+    │   │           │       ├───Default
+    │   │           │       │   └───ProgressPrinter
+    │   │           │       │       └───Subscriber
+    │   │           │       ├───Printer
+    │   │           │       └───TestDox
+    │   │           └───Util
+    │   │               ├───Exception
+    │   │               ├───PHP
+    │   │               │   └───Template
+    │   │               └───Xml
+    │   ├───psr
+    │   │   ├───container
+    │   │   │   └───src
+    │   │   └───log
+    │   │       └───src
+    │   ├───sebastian
+    │   │   ├───cli-parser
+    │   │   │   └───src
+    │   │   │       └───exceptions
+    │   │   ├───code-unit
+    │   │   │   └───src
+    │   │   │       └───exceptions
+    │   │   ├───code-unit-reverse-lookup
+    │   │   │   └───src
+    │   │   ├───comparator
+    │   │   │   └───src
+    │   │   │       └───exceptions
+    │   │   ├───complexity
+    │   │   │   └───src
+    │   │   │       ├───Complexity
+    │   │   │       ├───Exception
+    │   │   │       └───Visitor
+    │   │   ├───diff
+    │   │   │   └───src
+    │   │   │       ├───Exception
+    │   │   │       └───Output
+    │   │   ├───environment
+    │   │   │   └───src
+    │   │   ├───exporter
+    │   │   │   └───src
+    │   │   ├───global-state
+    │   │   │   └───src
+    │   │   │       └───exceptions
+    │   │   ├───lines-of-code
+    │   │   │   └───src
+    │   │   │       └───Exception
+    │   │   ├───object-enumerator
+    │   │   │   └───src
+    │   │   ├───object-reflector
+    │   │   │   └───src
+    │   │   ├───recursion-context
+    │   │   │   └───src
+    │   │   ├───type
+    │   │   │   └───src
+    │   │   │       ├───exception
+    │   │   │       └───type
+    │   │   └───version
+    │   │       └───src
+    │   ├───symfony
+    │   │   └───deprecation-contracts
+    │   └───theseer
+    │       └───tokenizer
+    │           └───src
+    └───writable
+        ├───cache
+        ├───debugbar
+        ├───logs
+        ├───session
+        └───uploads
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
 ## Contact
 
