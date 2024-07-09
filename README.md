@@ -1,7 +1,3 @@
-Based on the information provided and following the format typically found in well-structured GitHub README files, here is an enhanced version of your README file for the Salama Sasa project:
-
----
-
 # Salama Sasa
 
 Strengthening Security and Operational Efficiency in Gender-Based Violence Healthcare Systems in Kenya
