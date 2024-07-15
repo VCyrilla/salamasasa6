@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INFO - 2024-07-09 07:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-07-09 07:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-07-09 07:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
@@ -20,3 +21,63 @@ INFO - 2024-07-09 07:53:52 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-07-09 07:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-07-09 07:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-07-09 07:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+INFO - 2024-07-09 07:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 07:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 07:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-09 07:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-09 07:44:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'salamasasa', 3306, '', 0)
+#1 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\app\Controllers\Auth\AdminController.php(102): CodeIgniter\BaseModel->first()
+#7 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Auth\AdminController->login_action()
+#8 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AdminController))
+#9 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\user\\D...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\app\Controllers\Auth\AdminController.php(102): CodeIgniter\BaseModel->first()
+#6 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Auth\AdminController->login_action()
+#7 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AdminController))
+#8 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\user\Desktop\Xampp\htdocs\codeigniter\salamasasa3-master\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\user\\D...')
+#13 {main}
+CRITICAL - 2024-07-09 07:44:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/admin/login/action]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `administrator`
+WHERE `emailAddress` = :emailAddress:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth\AdminController.php(102): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth\AdminController->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Desktop\\Xampp\\htdocs\\codeigniter\\salamasasa3-master\\public\\index.php')
+INFO - 2024-07-09 07:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> c17a2cde68e14d1bf0538c063830eafae4382fd5
